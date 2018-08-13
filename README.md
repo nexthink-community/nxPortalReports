@@ -39,15 +39,16 @@
 
 ## install
 
+- [Temp 1.0.0 release files](https://we.tl/ylX8A2Wjfp)
 - Copy `install folder` and the `rpm` to your machine
-- Grant the install script execution permission: `$ sudo chmod +x install-centos.sh` 
+- Grant the install script execution permission: `$ sudo chmod +x install-centos.sh`
 - Run the install script: `$ sudo ./install-centos.sh`
 - Install the rpm: `$ sudo rpm -Uvh nxPortalReports-3-1.x86_64.rpm`
 
 ## Usage
 
 - The server runs by default on port 5000
-- Log in using admin / admin 
+- Log in using admin / admin
 - Go to settings page and configure your system.
 - Go to reports page and start creating reports.
   
@@ -70,9 +71,9 @@ Make sure to restart the tool: `$ sudo systemctl restart nxPortalReports`
 
 ```json
 {
-  MONGO_URI: 'MONGODB URI',
-  WEB_APP_SERVER_PORT: 5000,
-  BROWSER_PAGE_TIMEOUT: 120000,
-  DEBUG: false
+  "MONGO_URI": "MONGODB URI",
+  "WEB_APP_SERVER_PORT": 5000,
+  "BROWSER_PAGE_TIMEOUT": 120000,
+  "DEBUG": false
 }
 ```
