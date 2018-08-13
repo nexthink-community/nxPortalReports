@@ -37,7 +37,7 @@
 - Tool is packaged in an RPM and comes with an install script to install and configure database locally
 - Tool is compiled with all of its dependencies to avoid problems
 
-## install
+## Install
 
 - [Temp 1.0.0 release files](https://we.tl/ylX8A2Wjfp)
 - Copy `install folder` and the `rpm` to your machine
