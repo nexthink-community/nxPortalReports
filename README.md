@@ -45,6 +45,8 @@
 - Run the install script: `$ sudo ./install-centos.sh`
 - Install the rpm: `$ sudo rpm -Uvh nxPortalReports-3-1.x86_64.rpm`
 
+Note: recommended to install on Nexthink appliance. For other linux distributions contact me.
+
 ## Usage
 
 - The server runs by default on port 5000
