@@ -39,7 +39,7 @@
 
 ## Install
 
-- [Temp 1.0.0 release files](https://transfer.nexthink.com/index.php/s/5kDUzs9N4FWHTmJ)
+- [1.0.1 release files](https://transfer.nexthink.com/index.php/s/5kDUzs9N4FWHTmJ)
 - Copy the `install-centos.sh` and the `rpm` to your machine
 - Grant the install script execution permission: `$ sudo chmod +x install-centos.sh`
 - Run the install script: `$ sudo ./install-centos.sh`
