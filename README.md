@@ -40,10 +40,10 @@
 ## Install
 
 - [Temp 1.0.0 release files]()
-- Copy `install folder` and the `rpm` to your machine
+- Copy the `install-centos.sh` and the `rpm` to your machine
 - Grant the install script execution permission: `$ sudo chmod +x install-centos.sh`
 - Run the install script: `$ sudo ./install-centos.sh`
-- Install the rpm: `$ sudo rpm -Uvh nxPortalReports-3-1.x86_64.rpm`
+- Install the rpm: `$ sudo yum install nxPortalReports.rpm`
 
 Note: recommended to install on Nexthink appliance. For other linux distributions contact me.
 
@@ -53,8 +53,15 @@ Note: recommended to install on Nexthink appliance. For other linux distribution
 - Log in using admin / admin
 - Go to settings page and configure your system.
 - Go to reports page and start creating reports.
-  
-### If you need to change some configurations [optional]
+
+### Note
+
+By deafult we parralelize up to 5 dashboard generations. You can change that by setting `PARALLEL_GENERATION` in the config (Check [config section](#Config)).
+This will affect memory usage and speed/slow down the generation of reports.
+
+### Config
+
+#### If you need to change some configurations [optional]
 
 Create a config module in `\var\nexthink\nxPortalReports\config\local.json`
 
@@ -62,20 +69,25 @@ A sample file is found in  `\var\nexthink\nxPortalReports\config\local.sample.js
 
 Make sure to restart the tool: `$ sudo systemctl restart nxPortalReports`
 
-### Current configs
+#### Current configs
 
 - MONGO_URI
 - WEB_APP_SERVER_PORT
 - DEBUG
 - BROWSER_PAGE_TIMEOUT
+- ENCRYPTION_KEY
+- PARALLEL_GENERATION
 
-### sample
+#### sample
 
 ```json
 {
   "MONGO_URI": "MONGODB URI",
   "WEB_APP_SERVER_PORT": 5000,
   "BROWSER_PAGE_TIMEOUT": 120000,
-  "DEBUG": false
+  "DEBUG": false,
+  "ENCRYPTION_KEY": "32_CHARACTERS_PLEASE",
+  "PARALLEL_GENERATION": 5
 }
+```
 ```
