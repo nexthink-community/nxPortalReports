@@ -46,6 +46,7 @@
 - Install the rpm: `$ sudo yum install nxPortalReports.rpm`
 
 Note: recommended to install on Nexthink appliance. For other linux distributions contact me.
+Note 2: In case you are using appliance 6.18+ make sure to check your hardening parameters. You might need to open port 5000 manually.
 
 ## Usage
 
