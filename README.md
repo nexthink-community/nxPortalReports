@@ -23,6 +23,7 @@
 - Email reports (support multiple emails and CCing)
 - Customize the email template per report
 - Schedule reports using cron-like scheduler
+- Copy generated pdfs to an external directory (set COPY_DIR in config to a valid directory)
 
 ### Tool monitoring and status
 
@@ -40,6 +41,7 @@
 ## Install
 
 - [1.0.1 release files](https://transfer.nexthink.com/index.php/s/5kDUzs9N4FWHTmJ)
+- [1.1.0 release files](https://transfer.nexthink.com/index.php/s/ezU4roxoRau48fd)
 - Copy the `install-centos.sh` and the `rpm` to your machine
 - Grant the install script execution permission: `$ sudo chmod +x install-centos.sh`
 - Run the install script: `$ sudo ./install-centos.sh`
@@ -78,6 +80,7 @@ Make sure to restart the tool: `$ sudo systemctl restart nxPortalReports`
 - BROWSER_PAGE_TIMEOUT
 - ENCRYPTION_KEY
 - PARALLEL_GENERATION
+- COPY_DIR
 
 #### sample
 
@@ -88,7 +91,8 @@ Make sure to restart the tool: `$ sudo systemctl restart nxPortalReports`
   "BROWSER_PAGE_TIMEOUT": 120000,
   "DEBUG": false,
   "ENCRYPTION_KEY": "32_CHARACTERS_PLEASE",
-  "PARALLEL_GENERATION": 5
+  "PARALLEL_GENERATION": 5,
+  "COPY_DIR": null
 }
 ```
 ```
